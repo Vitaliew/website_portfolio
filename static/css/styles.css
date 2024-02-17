@@ -1,8 +1,39 @@
+.introduction {
+    height: 100vh;
+    width: 65%;
+    margin: 0;
+    background-color: black;
+    padding: 15% 5% 0 10%;
+}
+
 .title {
     color: white;
-    margin: 0 auto;
-    text-align: center;
 }
+/*This is the typewriter effect*/
+.typing{
+        display: inline-block;
+    }
+    .subtitle{
+        color: white;
+        overflow: hidden;
+        border-right: .30em solid red;
+        border-radius: 4px;
+        white-space: nowrap;
+        animation:
+          typing 1s steps(20, end) forwards,
+          blinking 1.2s infinite;
+        font-size: 1.6rem;
+        width: 0;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blinking {
+      from { border-color: transparent }
+      to { border-color: #0B60B0; }
+    }
+/* Until here */
 body {
-    background-color:#080808;
+    background-color: white;
 }
