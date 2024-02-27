@@ -65,6 +65,9 @@
 #about {
     white-space: nowrap;
     color: white;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
 }
 
 .footer-items {
