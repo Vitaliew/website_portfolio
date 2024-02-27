@@ -1,17 +1,23 @@
 {% include "header.html" %}
-  <div class="container introduction">
+    <div class="container introduction">
       <div class="row">
           <h1 class="col-7 display-1 title">Hello!</h1>
       </div>
       <div class="row typing">
           <h1 class="col display-6 subtitle">This is my portfolio website.</h1>
       </div>
-  </div>
-  <div class="container projects">
-    <ul>
-      {% for project in projects %}
-        <p>{{ project }}</p>
-      {% endfor %}
-    </ul>
-  </div>
+    </div>
+    <div class="container projects">
+        <ul>
+          {% for project in projects %}
+            <p>{{ project }}</p>
+          {% endfor %}
+        </ul>
+    </div>
+    <div class="footer">
+        <a id="about" class="footer-items">About me</a>
+        <a class="footer-items" href="{{ github_link }}">
+            <img class="logos" src="static/images/github-mark-white.svg"/>
+        </a>
+    </div>
 {% include "footer.html" %}

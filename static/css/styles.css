@@ -1,5 +1,5 @@
 .introduction {
-  height: 100vh;
+  height: 93vh;
   width: 65%;
   margin: 0;
   background-color: black;
@@ -14,7 +14,7 @@
 .typing{
         display: inline-block;
     }
-    .subtitle{
+    .subtitle {
         color: white;
         overflow: hidden;
         border-right: .30em solid red;
@@ -36,7 +36,7 @@
     }
 /* Until here */
 
-.projects{
+.projects {
   position: absolute;
   width: 15%;
   height: 50%;
@@ -45,6 +45,35 @@
   top: 25%;
   margin:0;
   overflow: auto;
+}
+
+.footer {
+    background: black;
+    margin: 0;
+    height: 7vh;
+    width: 65%;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logos {
+    height: 25px;
+    width: 25px;
+    transition: 0.1s;
+}
+#about {
+    white-space: nowrap;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-items {
+    margin-left: 20px;
+}
+
+.footer-items:hover {
+    opacity: 0.5;
 }
 
 body {
