@@ -65,7 +65,6 @@
 #about {
     white-space: nowrap;
     color: white;
-    text-decoration: none;
 }
 
 .footer-items {
@@ -74,6 +73,11 @@
 
 .footer-items:hover {
     opacity: 0.5;
+}
+
+#about_text {
+    display: none;
+    color: white;
 }
 
 body {

@@ -6,6 +6,9 @@
       <div class="row typing">
           <h1 class="col display-6 subtitle">This is my portfolio website.</h1>
       </div>
+      <div class="row">
+          <p id="about_text" >This is the text about me</p>
+      </div>
     </div>
     <div class="container projects">
         <ul>
@@ -14,9 +17,9 @@
           {% endfor %}
         </ul>
     </div>
-    <div class="footer">
-        <a id="about" class="footer-items">About me</a>
-        <a class="footer-items" href="{{ github_link }}">
+    <div class="footer" >
+        <p onclick="show_about()" id="about" class="footer-items">About me</p>
+        <a class="footer-items logos" href="{{ github_link }}">
             <img class="logos" src="static/images/github-mark-white.svg"/>
         </a>
     </div>
