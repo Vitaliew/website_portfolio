@@ -9,19 +9,32 @@ function show_about() {
 function show_projects() {
   var x = document.getElementById("projects");
   var y = document.getElementById("contributions");
-  if (x.style.display === "none" || x.style.display === "") {
+  if (x.style.opacity == 0) {
+    if (y.style.opacity == 1) {
+        y.classList.toggle('fade');
+        y.style.opacity = 1;
+        x.classList.toggle('fade');
+    }
     x.classList.toggle('fade');
-  } else {
-    y.classList.toggle('fade');
+    x.style.opacity = 1;
+  }
+  else {
+    x.style.opacity == 0;
+    x.classList.toggle('fade');
+
   }
 };
 
 function show_contributions() {
   var x = document.getElementById("contributions");
   var y = document.getElementById("projects");
-  if (x.style.display === "none" || x.style.display === "") {
+  if (x.style.opacity == 0) {
+    if (y.style.opacity == 1) {
+        y.classList.toggle('fade');
+        y.style.opacity = 1;
+        x.classList.toggle('fade');
+    }
     x.classList.toggle('fade');
-  } else {
-    y.classList.toggle('fade');
+    x.style.opacity = 1;
   }
-}
+};
