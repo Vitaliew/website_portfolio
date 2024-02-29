@@ -10,10 +10,9 @@ function show_projects() {
   var x = document.getElementById("projects");
   var y = document.getElementById("contributions");
   if (x.style.display === "none" || x.style.display === "") {
-    y.style.display = "none";
-    x.style.display = "block";
+    x.classList.toggle('fade');
   } else {
-    x.style.display = "none";
+    y.classList.toggle('fade');
   }
 };
 
@@ -21,9 +20,8 @@ function show_contributions() {
   var x = document.getElementById("contributions");
   var y = document.getElementById("projects");
   if (x.style.display === "none" || x.style.display === "") {
-    y.style.display = "none";
-    x.style.display = "block";
+    x.classList.toggle('fade');
   } else {
-    x.style.display = "none";
+    y.classList.toggle('fade');
   }
 }
