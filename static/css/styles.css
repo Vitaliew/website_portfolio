@@ -62,7 +62,7 @@
     width: 25px;
     transition: 0.1s;
 }
-#about {
+.buttons {
     white-space: nowrap;
     color: white;
     border: none;

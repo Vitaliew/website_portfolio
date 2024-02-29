@@ -18,9 +18,11 @@
         </ul>
     </div>
     <div class="footer" >
-        <button onclick="show_about()" id="about" class="footer-items">About me</button>
         <a class="footer-items logos" href="{{ github_link }}">
             <img class="logos" src="static/images/github-mark-white.svg"/>
         </a>
+        <button onclick="show_about()" id="about" class="footer-items buttons">About me</button>
+        <button class="footer-items buttons">Projects</button>
+        <button class="footer-items buttons">Contributions</button>
     </div>
 {% include "footer.html" %}
