@@ -12,7 +12,7 @@ github_link = "https://github.com/Vitaliew"
 
 @app.route("/")
 def home():
-    return render_template("index.html", projects=projects_list, github_link=github_link)
+    return render_template("index.html", items=projects_list, github_link=github_link)
 
 
 if __name__ == "__main__":

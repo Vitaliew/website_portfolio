@@ -11,9 +11,9 @@
       </div>
     </div>
     <div class="container projects">
-        <ul>
-          {% for project in projects %}
-            <p>{{ project }}</p>
+        <ul id="main_list">
+          {% for item in items %}
+            <p>{{ item }}</p>
           {% endfor %}
         </ul>
     </div>
@@ -21,8 +21,14 @@
         <a class="footer-items logos" href="{{ github_link }}">
             <img class="logos" src="static/images/github-mark-white.svg"/>
         </a>
-        <button onclick="show_about()" id="about" class="footer-items buttons">About me</button>
-        <button class="footer-items buttons">Projects</button>
-        <button class="footer-items buttons">Contributions</button>
+        <form>
+            <button onclick="show_about()" id="about_btn" class="footer-items buttons">About me</button>
+        </form>
+        <form>
+            <button onclick="show_projects" id="projects_btn" class="footer-items buttons">Projects</button>
+        </form>
+        <form>
+            <button onclick="show_contributions" id="contributions_btn" class="footer-items buttons">Contributions</button>
+        </form>
     </div>
 {% include "footer.html" %}
