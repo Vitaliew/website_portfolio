@@ -6,35 +6,40 @@ function show_about() {
     x.style.display = "none";
   }
 };
+
+var i = 0;
 function show_projects() {
   var x = document.getElementById("projects");
   var y = document.getElementById("contributions");
-  if (x.style.opacity == 0) {
-    if (y.style.opacity == 1) {
-        y.classList.toggle('fade');
-        y.style.opacity = 1;
-        x.classList.toggle('fade');
-    }
+  var button_x = document.getElementById("projects_btn")
+  var button_y = document.getElementById("contributions_btn")
+  if ( i < 1 ) {
+    i = i + 1;
     x.classList.toggle('fade');
-    x.style.opacity = 1;
-  }
-  else {
-    x.style.opacity == 0;
-    x.classList.toggle('fade');
-
-  }
+    button_x.disabled = true;
+  };
+  if ( i > 1 ) {
+      x.classList.toggle('fade');
+      y.classList.toggle('fade');
+      button_x.disabled = true;
+      button_y.disabled = false;
+  };
 };
 
 function show_contributions() {
   var x = document.getElementById("contributions");
   var y = document.getElementById("projects");
-  if (x.style.opacity == 0) {
-    if (y.style.opacity == 1) {
-        y.classList.toggle('fade');
-        y.style.opacity = 1;
-        x.classList.toggle('fade');
-    }
+  var button_x = document.getElementById("contributions_btn")
+  var button_y = document.getElementById("projects_btn")
+  if ( i < 1 ) {
+    i = i + 1;
     x.classList.toggle('fade');
-    x.style.opacity = 1;
-  }
+    button_x.disabled = true;
+  };
+  if ( i > 1 ) {
+      x.classList.toggle('fade');
+      y.classList.toggle('fade');
+      button_x.disabled = true;
+      button_y.disabled = false;
+  };
 };
