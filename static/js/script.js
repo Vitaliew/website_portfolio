@@ -19,6 +19,8 @@ function show_projects() {
     x.style.zIndex = 1;
     x.classList.toggle('fade');
     button_x.disabled = true;
+    button_x.style.color = "gray";
+    button_y.style.color = "white";
   }
   else {
       y.style.zIndex = 0;
@@ -27,6 +29,8 @@ function show_projects() {
       y.classList.toggle('fade');
       button_y.disabled = false;
       button_x.disabled = true;
+      button_x.style.color = "gray";
+      button_y.style.color = "white";
   };
 };
 
@@ -41,6 +45,8 @@ function show_contributions() {
     x.style.zIndex = 1;
     x.classList.toggle('fade');
     button_x.disabled = true;
+    button_x.style.color = "gray";
+    button_y.style.color = "white";
   }
   else {
       y.style.zIndex = 0;
@@ -49,5 +55,7 @@ function show_contributions() {
       y.classList.toggle('fade');
       button_y.disabled = false;
       button_x.disabled = true;
+      button_x.style.color = "gray";
+      button_y.style.color = "white";
   };
 };
