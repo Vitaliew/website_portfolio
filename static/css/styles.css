@@ -75,12 +75,21 @@
 }
 
 .footer-items:hover {
-    opacity: 0.5;
+    opacity: 0.55;
 }
 
 #about_text {
-    display: none;
     color: white;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#about_text.fade {
+    opacity:1;
 }
 
 #projects {

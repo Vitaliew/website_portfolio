@@ -1,9 +1,15 @@
+var n = 0;
 function show_about() {
   var x = document.getElementById("about_text");
-  if (x.style.display === "none" || x.style.display === "") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
+  var button_x = document.getElementById("about_btn")
+  n = n + 1;
+  if ( n % 2 == 0) {
+      x.classList.toggle('fade');
+      button_x.style.color = "white";
+  }
+  else {
+    x.classList.toggle('fade');
+    button_x.style.color = "#0B60B0";
   }
 };
 
@@ -19,7 +25,7 @@ function show_projects() {
     x.style.zIndex = 1;
     x.classList.toggle('fade');
     button_x.disabled = true;
-    button_x.style.color = "gray";
+    button_x.style.color = "#0B60B0";
     button_y.style.color = "white";
   }
   else {
@@ -29,7 +35,7 @@ function show_projects() {
       y.classList.toggle('fade');
       button_y.disabled = false;
       button_x.disabled = true;
-      button_x.style.color = "gray";
+      button_x.style.color = "#0B60B0";
       button_y.style.color = "white";
   };
 };
@@ -45,7 +51,7 @@ function show_contributions() {
     x.style.zIndex = 1;
     x.classList.toggle('fade');
     button_x.disabled = true;
-    button_x.style.color = "gray";
+    button_x.style.color = "#0B60B0";
     button_y.style.color = "white";
   }
   else {
@@ -55,7 +61,7 @@ function show_contributions() {
       y.classList.toggle('fade');
       button_y.disabled = false;
       button_x.disabled = true;
-      button_x.style.color = "gray";
+      button_x.style.color = "#0B60B0";
       button_y.style.color = "white";
   };
 };
