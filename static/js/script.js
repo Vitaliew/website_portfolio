@@ -17,12 +17,12 @@ function show_projects() {
     i = i + 1;
     x.classList.toggle('fade');
     button_x.disabled = true;
-  };
-  if ( i > 1 ) {
+  }
+  else {
       x.classList.toggle('fade');
       y.classList.toggle('fade');
-      button_x.disabled = true;
       button_y.disabled = false;
+      button_x.disabled = true;
   };
 };
 
@@ -35,11 +35,11 @@ function show_contributions() {
     i = i + 1;
     x.classList.toggle('fade');
     button_x.disabled = true;
-  };
-  if ( i > 1 ) {
+  }
+  else {
       x.classList.toggle('fade');
       y.classList.toggle('fade');
-      button_x.disabled = true;
       button_y.disabled = false;
+      button_x.disabled = true;
   };
 };
