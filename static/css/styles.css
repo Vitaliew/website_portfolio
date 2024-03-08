@@ -3,7 +3,7 @@
   width: 65%;
   margin: 0;
   background-color: black;
-  padding: 15% 0 0 10%;
+  padding: 10% 0 0 10%;
   overflow: hidden;
 }
 
@@ -23,7 +23,6 @@
         animation:
           typing 1s steps(20, end) forwards,
           blinking 1.2s infinite;
-        font-size: 1.6rem;
         width: 0;
     }
     @keyframes typing {
