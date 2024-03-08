@@ -15,10 +15,14 @@ function show_projects() {
   var button_y = document.getElementById("contributions_btn")
   if ( i < 1 ) {
     i = i + 1;
+    y.style.zIndex = 0;
+    x.style.zIndex = 1;
     x.classList.toggle('fade');
     button_x.disabled = true;
   }
   else {
+      y.style.zIndex = 0;
+      x.style.zIndex = 1;
       x.classList.toggle('fade');
       y.classList.toggle('fade');
       button_y.disabled = false;
@@ -33,10 +37,14 @@ function show_contributions() {
   var button_y = document.getElementById("projects_btn")
   if ( i < 1 ) {
     i = i + 1;
+    y.style.zIndex = 0;
+    x.style.zIndex = 1;
     x.classList.toggle('fade');
     button_x.disabled = true;
   }
   else {
+      y.style.zIndex = 0;
+      x.style.zIndex = 1;
       x.classList.toggle('fade');
       y.classList.toggle('fade');
       button_y.disabled = false;
