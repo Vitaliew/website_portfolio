@@ -1,6 +1,6 @@
 var n = 0;
 function show_about() {
-  var x = document.getElementById("about_text");
+  var x = document.getElementById("about");
   var button_x = document.getElementById("about_btn")
   n = n + 1;
   if ( n % 2 == 0) {
