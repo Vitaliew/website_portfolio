@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 projects_list = []
 contributions_list = []
-for i in range(12):
+for i in range(25):
     projects_list.append(f"Project {i}")
     contributions_list.append(f"Contribution {i}")
 

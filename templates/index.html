@@ -23,14 +23,16 @@
           </ul>
       </div>
     </div>
-    <div id="projects" class="container items">
+    <div id="projects" class="panel">
         <ul>
           {% for project in projects %}
-            <li>{{ project }}</li>
+            <li>
+                {{ project }}
+            </li>
           {% endfor %}
         </ul>
     </div>
-    <div id="contributions" class="container items">
+    <div id="contributions" class="panel">
         <ul>
           {% for contribution in contributions %}
             <li>{{ contribution }}</li>

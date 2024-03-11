@@ -7,7 +7,7 @@ body {
   width: 65%;
   margin: 0;
   background-color: black;
-  padding: 10% 0 0 5%;
+  padding: 7vh 0 0 7vh;
   overflow: hidden;
 }
 
@@ -39,41 +39,43 @@ body {
     }
 /* Until here */
 
-.items {
-  position: absolute;
-  width: 15%;
-  height: 50%;
-  padding:0;
-  right:15%;
-  top: 25%;
-  margin:0;
-  overflow: auto;
+.panel {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 65%;
+    background-color: white;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 6vh; /* Place content 60px from the top */
+    padding-bottom: 5vh;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-#projects {
-    opacity: 0;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
+.panel::-webkit-scrollbar {
+    display: none;
 }
 
-#projects.fade {
-    opacity:1;
+.panel li {
+  padding: 8px 8px 8px 0px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: 0.3s;
 }
 
-#contributions {
-    opacity: 0;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
+.panel li:hover {
+  color: black;
+  padding-left: 15%;
+  transition: 0.25s;
 }
 
-#contributions.fade {
-    opacity: 1;
+@media screen and (max-height: 450px) {
+  .panel {padding-top: 15px;}
+  .panel li {font-size: 18px;}
 }
 
 #about {
