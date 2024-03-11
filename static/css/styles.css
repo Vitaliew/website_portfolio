@@ -1,3 +1,7 @@
+body {
+    background-color: white;
+}
+
 .introduction {
   height: 93vh;
   width: 65%;
@@ -46,35 +50,30 @@
   overflow: auto;
 }
 
-.footer {
-    background: black;
-    margin: 0;
-    height: 7vh;
-    width: 65%;
-    padding: 1%;
-    display: flex;
-    flex-wrap: wrap;
+#projects {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.logos {
-    height: 25px;
-    width: 25px;
-    transition: 0.1s;
-}
-.buttons {
-    white-space: nowrap;
-    color: white;
-    border: none;
-    background-color: inherit;
-    cursor: pointer;
+#projects.fade {
+    opacity:1;
 }
 
-.footer-items {
-    margin-left: 20px;
+#contributions {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.footer-items:hover {
-    opacity: 0.55;
+#contributions.fade {
+    opacity: 1;
 }
 
 #about {
@@ -105,32 +104,33 @@
     opacity: 0.55;
 }
 
-#projects {
-    opacity: 0;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
+.footer {
+    background: black;
+    margin: 0;
+    height: 7vh;
+    width: 65%;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#projects.fade {
-    opacity:1;
+.logos {
+    height: 25px;
+    width: 25px;
+    transition: 0.1s;
+}
+.buttons {
+    white-space: nowrap;
+    color: white;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
 }
 
-#contributions {
-    opacity: 0;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
+.footer-items {
+    margin-left: 20px;
 }
 
-#contributions.fade {
-    opacity: 1;
-}
-
-body {
-    background-color: white;
+.footer-items:hover {
+    opacity: 0.55;
 }
