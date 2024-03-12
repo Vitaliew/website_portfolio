@@ -23,6 +23,7 @@
           </ul>
       </div>
     </div>
+
     <div id="projects" class="panel">
         <ul>
           {% for project in projects %}
@@ -32,19 +33,23 @@
           {% endfor %}
         </ul>
     </div>
+
     <div id="contributions" class="panel">
         <ul>
           {% for contribution in contributions %}
-            <li>{{ contribution }}</li>
+            <li>
+                {{ contribution }}
+            </li>
           {% endfor %}
         </ul>
     </div>
+
     <div class="footer" >
         <a class="footer-items logos" href="{{ github_link }}">
             <img class="logos" src="static/images/github-mark-white.svg"/>
         </a>
         <button onclick="show_about()" id="about_btn" class="footer-items buttons">About me</button>
-        <button onclick="show_projects()" id="projects_btn" class="footer-items buttons">Projects</button>
-        <button onclick="show_contributions()" id="contributions_btn" class="footer-items buttons">Contributions</button>
+        <button id="projects_btn" onclick="show_panel(this.id)" class="footer-items buttons">Projects</button>
+        <button id="contributions_btn" onclick="show_panel(this.id)"  class="footer-items buttons">Contributions</button>
     </div>
 {% include "footer.html" %}

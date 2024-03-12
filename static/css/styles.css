@@ -48,7 +48,7 @@ body {
     left: 65%;
     background-color: white;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 6vh; /* Place content 60px from the top */
+    padding-top: 6vh;
     padding-bottom: 5vh;
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
@@ -61,14 +61,14 @@ body {
   padding: 8px 8px 8px 0px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: black;
   white-space: nowrap;
   overflow: hidden;
   transition: 0.3s;
 }
 
 .panel li:hover {
-  color: black;
+  color: #0B60B0;
   padding-left: 15%;
   transition: 0.25s;
 }
