@@ -13,6 +13,7 @@ function show_about() {
   }
 };
 
+var i = 0;
 function show_panel(clicked_id) {
     if (clicked_id === "projects_btn") {
         button_x = document.getElementById(clicked_id);
@@ -26,6 +27,10 @@ function show_panel(clicked_id) {
         x = document.getElementById("contributions");
         y = document.getElementById("projects");
     }
+    if (i === 0 ) {
+        x.style.zIndex = 2;
+        i = i + 1;
+        }
     button_y.style.color = "white";
     button_x.style.color = "#0B60B0";
     y.style.width = "0%";
