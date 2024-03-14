@@ -73,6 +73,11 @@ body {
   transition: 0.25s;
 }
 
+.panel a {
+    color: inherit;
+    text-decoration: none;
+}
+
 @media screen and (max-height: 450px) {
   .panel {padding-top: 15px;}
   .panel li {font-size: 18px;}

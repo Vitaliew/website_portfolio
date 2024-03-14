@@ -1,10 +1,10 @@
 {% include "header.html" %}
     <div class="container introduction">
       <div class="row col-5">
-          <h1 class=" title">Hello!</h1>
+          <h1 class=" title">Welcome.</h1>
       </div>
       <div class="row col typing">
-          <h3 class="subtitle">This is my portfolio website.</h3>
+          <h3 class="subtitle">To my portfolio website.</h3>
       </div>
       <div id="about" class="row col-8">
           <h6 class="about_items">{{ about }}</h6>
@@ -28,7 +28,7 @@
         <ul>
           {% for project in projects %}
             <li>
-                {{ project }}
+                <a href="{{ projects[project] }}">{{ project|safe }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -38,7 +38,7 @@
         <ul>
           {% for contribution in contributions %}
             <li>
-                {{ contribution }}
+                <a href="{{ contributions[contribution] }}">{{ contribution|safe }}</a>
             </li>
           {% endfor %}
         </ul>
