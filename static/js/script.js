@@ -15,24 +15,15 @@ function show_about() {
 
 var i = 0;
 function show_panel(clicked_id) {
-    if (clicked_id === "projects_btn") {
-        button_x = document.getElementById(clicked_id);
-        button_y = document.getElementById("contributions_btn");
-        x = document.getElementById("projects");
-        y = document.getElementById("contributions");
-    }
-    else if (clicked_id === "contributions_btn") {
-        button_x = document.getElementById(clicked_id);
-        button_y = document.getElementById("projects_btn");
-        x = document.getElementById("contributions");
-        y = document.getElementById("projects");
-    }
-    if (i === 0 ) {
-        x.style.zIndex = 2;
-        i = i + 1;
+    var button_x = document.getElementById(clicked_id);
+    var x = document.getElementById("projects");
+    i = i + 1;
+    if (i % 2 == 0 ) {
+        x.style.width = "0%";
+        button_x.style.color = "white";
         }
-    button_y.style.color = "white";
-    button_x.style.color = "#0B60B0";
-    y.style.width = "0%";
-    x.style.width = "25%";
+    else {
+        x.style.width = "25%";
+        button_x.style.color = "#0B60B0";
+    }
 };

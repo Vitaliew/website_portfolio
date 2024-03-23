@@ -2,7 +2,6 @@ from flask import Flask, render_template, request
 import requests
 from bs4 import BeautifulSoup
 
-
 app = Flask(__name__)
 
 
@@ -31,8 +30,7 @@ def home():
             name = href.split("/")
             github_projects_dict[name[-1]] = href
 
-        for i in range(25):
-            github_contributions_dict[f"Contribution {i}"] = ""
+        github_contributions_dict[f"No contributions so far"] = ""
 
     return render_template("index.html", contributions=github_contributions_dict,
                            projects=github_projects_dict, github_link=github_link, about=about_text,

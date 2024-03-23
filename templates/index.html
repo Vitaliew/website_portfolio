@@ -34,22 +34,12 @@
         </ul>
     </div>
 
-    <div id="contributions" class="panel">
-        <ul>
-          {% for contribution in contributions %}
-            <li>
-                <a href="{{ contributions[contribution] }}">{{ contribution|safe }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-    </div>
-
     <div class="footer" >
         <a class="footer-items logos" href="{{ github_link }}">
             <img class="logos" src="static/images/github-mark-white.svg"/>
         </a>
         <button onclick="show_about()" id="about_btn" class="footer-items buttons">About me</button>
+        <button id="contacts_btn" onclick=""  class="footer-items buttons">Contacts</button>
         <button id="projects_btn" onclick="show_panel(this.id)" class="footer-items buttons">Projects</button>
-        <button id="contributions_btn" onclick="show_panel(this.id)"  class="footer-items buttons">Contributions</button>
     </div>
 {% include "footer.html" %}
