@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: black;
 }
 
 .introduction {
@@ -97,7 +97,7 @@ body {
 }
 
 
-.about_items {
+.items {
     color: white;
 }
 
@@ -109,6 +109,19 @@ body {
 
 .about-achievements:hover {
     opacity: 0.55;
+}
+
+#contacts {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#contacts.fade {
+    opacity:1;
 }
 
 .footer {

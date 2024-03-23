@@ -4,13 +4,13 @@
           <h1 class=" title">Welcome.</h1>
       </div>
       <div class="row col typing">
-          <h3 class="subtitle">To my portfolio website.</h3>
+          <h3 class="subtitle">This is my portfolio website.</h3>
       </div>
       <div id="about" class="row col-8">
-          <h6 class="about_items">{{ about }}</h6>
+          <h6 class="items">{{ about }}</h6>
           <p></p>
-          <h4 class="about_items">Achievements:</h4>
-          <ul class="about_items">
+          <h4 class="items">Achievements:</h4>
+          <ul class="items">
               {% for achievement in achievements %}
                 <li class="row col-4 about-achievements">
                     {% if achievements[achievement] == "" %}
@@ -22,6 +22,16 @@
               {% endfor %}
           </ul>
       </div>
+
+      <div id="contacts" class="row col-8">
+          <h4 class="items">Get in touch with me:</h4>
+          <ul class="items">
+              <li class="row col-4">
+                  <img class="logos" style="width:50px;" src="static/images/linkedin-svgrepo-com.svg"/>
+              </li>
+          </ul>
+      </div>
+
     </div>
 
     <div id="projects" class="panel">
@@ -39,7 +49,7 @@
             <img class="logos" src="static/images/github-mark-white.svg"/>
         </a>
         <button onclick="show_about()" id="about_btn" class="footer-items buttons">About me</button>
-        <button id="contacts_btn" onclick=""  class="footer-items buttons">Contacts</button>
+        <button id="contacts_btn" onclick="show_contacts()"  class="footer-items buttons">Contacts</button>
         <button id="projects_btn" onclick="show_panel(this.id)" class="footer-items buttons">Projects</button>
     </div>
 {% include "footer.html" %}
