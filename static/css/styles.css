@@ -108,7 +108,8 @@ body {
 }
 
 .about-achievements:hover {
-    opacity: 0.55;
+    color: #0B60B0;
+    transition: 0.10s;
 }
 
 #contacts {
@@ -122,6 +123,21 @@ body {
 
 #contacts.fade {
     opacity:1;
+}
+
+.contacts-list li {
+    padding-bottom: 5px;
+}
+
+.contacts-list a {
+    border: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.contacts-list a:hover {
+    color: #0B60B0;
+    transition: 0.10s;
 }
 
 .footer {
